@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon Fleet Logistics | Case Study</title>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-dark: #000000;
+      --card-bg: #18292c;
+      --border-color: #2c5457;
+      --text-primary: #FFF9EC;
+      --accent-cyan: #00EEFF;
+      --accent-gold: #FFB703; /* New secondary highlight color */
+      --hero-bg: #0a373d;     /* Deep rich teal/emerald hero background */
+      --text-muted: #94D2E3;
+      --code-bg: #0b1416;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-primary);
+      background-color: var(--bg-dark);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    .main-container {
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    /* Full-Bleed Deep Teal Hero Section */
+    .hero-section-full {
+      background: linear-gradient(180deg, var(--hero-bg) 0%, #0c2023 100%);
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-primary);
+      padding: 4rem 1rem;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+    }
+
+    .badge-case-study {
+      background-color: rgba(255, 183, 3, 0.15);
+      color: var(--accent-gold);
+      border: 1px solid rgba(255, 183, 3, 0.4);
+      font-weight: 600;
+    }
+
+    .badge-tag-dark {
+      background-color: var(--card-bg);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      font-weight: 500;
+    }
+
+    .card-phase {
+      border: 1px solid var(--border-color);
+      border-left: 4px solid var(--accent-cyan);
+      background-color: var(--card-bg) !important;
+      border-radius: 8px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card-phase:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 15px rgba(0, 238, 255, 0.15);
+    }
+
+    .folder-structure {
+      background-color: var(--code-bg);
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-family: monospace;
+      padding: 1.5rem;
+    }
+
+    .btn-theme-cyan {
+      background-color: transparent;
+      color: var(--accent-cyan);
+      border: 1.5px solid var(--accent-cyan);
+      padding: 10px 24px;
+      font-weight: 600;
+      border-radius: 6px;
+      transition: all 0.2s ease-in-out;
+      text-decoration: none;
+    }
+
+    .btn-theme-cyan:hover {
+      background-color: var(--accent-cyan);
+      color: #000000;
+      box-shadow: 0 0 15px rgba(0, 238, 255, 0.4);
+    }
+
+    .text-theme-cyan {
+      color: var(--accent-gold) !important;
+    }
+
+    .text-theme-gold {
+      color: var(--accent-gold) !important;
+    }
+
+    .text-theme-muted {
+      color: var(--text-muted) !important;
+    }
+
+    .boder-custom {
+        border: 1px solid var(--border-color) !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-Bleed Deep Teal Hero Section -->
+  <header class="hero-section-full text-center mb-5">
+    <div style="max-width: 1000px; margin: 0 auto;">
+      <span class="badge rounded-pill badge-case-study mb-3 px-3 py-2">Data & Accounting Case Study</span>
+      <h1 class="fw-bold display-6 text-white mb-3">Horizon Fleet Logistics</h1>
+      <p class="lead text-theme-muted max-w-75 mx-auto">
+        A Complete Financial Data Pipeline: Python, QuickBooks Online, & Power BI
+      </p>
+      
+      <!-- Tech Badges -->
+      <div class="d-flex justify-content-center gap-2 flex-wrap mt-4">
+        <span class="badge badge-tag-dark px-3 py-2"><i class="bi bi-filetype-py me-1 text-theme-gold"></i> Python</span>
+        <span class="badge badge-tag-dark px-3 py-2"><i class="bi bi-journal-check me-1 text-theme-cyan"></i> QuickBooks Online</span>
+        <span class="badge badge-tag-dark px-3 py-2"><i class="bi bi-bar-chart-fill me-1 text-theme-gold"></i> Power BI</span>
+        <span class="badge badge-tag-dark px-3 py-2"><i class="bi bi-database me-1 text-theme-cyan"></i> DAX</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Centered Content -->
+  <main class="main-container my-5">
+
+    <!-- Executive Summary -->
+    <section class="row justify-content-center mb-5">
+      <div class="col-lg-12">
+        <div class="card card-phase p-4 border-0">
+          <h3 class="h5 text-theme-cyan fw-bold mb-3"><i class="bi bi-stars me-2"></i>Project Overview</h3>
+          <p class="mb-0 text-white" style="line-height: 1.7;">
+            This project demonstrates an end-to-end accounting and data analytics pipeline designed to streamline financial workflows for complex logistics operations. By bridging technical data engineering, meticulous bookkeeping controls, and dynamic business intelligence, raw unorganized fleet expenses are transformed into audit-ready financial records and real-time executive insights.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Raw Unstructured Data -->
+    <section class="row justify-content-center mb-5">
+      <div class="col-lg-12">
+        <h2 class="h4 fw-bold mb-4 text-theme-gold"><i class="bi bi-file-earmark-spreadsheet me-2"></i>Raw Unstructured Data</h2>
+
+        <div class="vstack gap-4"></div>
+
+        <!-- Input Proof: Raw Fleet Expense Ledger -->
+        <div class="card card-phase p-4 border-0">
+          <div class="mt-3 p-3 rounded" style="background-color: var(--code-bg); border: 1px solid var(--border-color);">
+              <small class="text-theme-cyan fw-bold d-block mb-2"><i class="bi bi-file-earmark-spreadsheet me-1"></i> Input Proof: Raw Fleet Expense Ledger</small>
+              <img src="images/Raw_CSV.png" class="img-fluid rounded border border-secondary" alt="Raw Fleet Data Table" style="border-color: var(--border-color) !important;">
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Pipeline Phases with Embedded Clean Screenshots -->
+    <section class="row justify-content-center mb-5">
+      <div class="col-lg-12">
+        <h2 class="h4 fw-bold mb-4 text-theme-cyan"><i class="bi bi-diagram-3 me-2"></i>Pipeline Phases</h2>
+        
+        <div class="vstack gap-4">
+
+          <!-- Phase 1: Python -->
+          <div class="card card-phase p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h3 class="h5 fw-bold mb-0 text-white">Phase 1: Data Engineering & Sanitization</h3>
+              <span class="badge badge-tag-dark text-theme-gold">Python</span>
+            </div>
+            <p class="text-theme-muted mb-3">
+              Processed high-volume, unformatted logistics data (fuel logs, maintenance receipts, driver payouts). Handled missing values, formatted date schemas, and split combined fields into clean structures ready for accounting software ingestion.
+            </p>
+
+            <!-- Embedded Visual 1 -->
+            <div class="mt-3 p-3 rounded" style="background-color: var(--code-bg); border: 1px solid var(--border-color);">
+              <small class="text-theme-cyan fw-bold d-block mb-2"><i class="bi bi-file-earmark-spreadsheet me-1"></i> Cleaned Data Proof: Cleaned Expense Ledger</small>
+              <img src="images/Cleaned_ledger.png" class="img-fluid rounded border border-secondary" alt="Cleaned Fleet Data Table" style="border-color: var(--border-color) !important;">
+            </div>
+          </div>
+
+          <!-- Phase 2: QBO with PDF Link Button -->
+            <div class="card card-phase p-4 mb-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+                <h3 class="h5 fw-bold mb-0 text-white">Phase 2: Bookkeeping & Financial Controls</h3>
+                <span class="badge badge-tag-dark text-theme-cyan">QuickBooks Online</span>
+            </div>
+            
+            <p class="text-theme-muted mb-3">
+                Batch-imported cleaned records into QuickBooks Online. Applied custom mapping rules to allocate complex split expenses across cost centers, and conducted full monthly bank reconciliations to ensure complete financial accuracy.
+            </p>
+
+            <!-- Responsive EmbeddedPDF Frame -->
+            <div class="mt-3 p-2 rounded" style="background-color: var(--code-bg); border: 1px solid var(--border-color);">
+                <small class="text-theme-gold fw-bold d-block mb-2">
+                <i class="bi bi-patch-check me-1"></i> Audit Trail: Reconciliation Statement Preview (PDF) </small>
+                <iframe src="./images/Reconciliation.pdf" width="100%" height="450px" style="border: none; border-radius: 6px;">
+                <p>Your browser does not support embedded PDFs. <a href="./images/Reconciliation.pdf"  class="txt-theme-cyan">Download PDF instead.</a></p>
+                </iframe>
+            </div>
+            </div>
+
+          <!-- Phase 3: Power BI -->
+          <div class="card card-phase p-4">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h3 class="h5 fw-bold mb-0 text-white">Phase 3: Executive Business Intelligence</h3>
+              <span class="badge badge-tag-dark text-theme-gold">Power BI & DAX</span>
+            </div>
+            <p class="text-theme-muted mb-3">
+              Extracted reconciled general ledger data to construct an interactive Power BI dashboard. Developed dynamic DAX measures to analyze vehicle profitability, operating expense ratios (OPEX), and route-level cash flow trends.
+            </p>
+
+            <!-- Embedded Visual 3 -->
+            <div class="mt-3 p-3 rounded" style="background-color: var(--code-bg); border: 1px solid var(--border-color);">
+              <small class="text-theme-cyan fw-bold d-block mb-2"><i class="bi bi-bar-chart-line me-1"></i> Reporting Proof: Executive Fleet Dashboard</small>
+              <img src="images/dashboard.png" class="img-fluid rounded border border-secondary" alt="Power BI Dashboard" style="border-color: var(--border-color) !important;">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Repository & Folder Structure -->
+    <section class="row justify-content-center mb-5">
+      <div class="col-lg-12">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <a href="#" class="btn btn-theme-cyan btn-sm"><i class="bi bi-github me-1"></i> View on GitHub</a>
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 text-theme-muted border-top border-secondary my-4">
+    <small>&copy; 2026 Jyoti Kumar | Portfolio Project Case Study</small>
+  </footer>
+
+</body>
+</html>
